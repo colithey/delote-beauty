@@ -1,0 +1,77 @@
+@import './reset.css';
+@import './fonts.css';
+
+body {
+    font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 1336px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: var(--bgc, #111);
+}
+
+.section__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 120px 0;
+}
+
+.about__subtitle {
+    max-width: 856px;
+}
+
+.subtitle__text {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.section__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    row-gap: 80px;
+    padding: 95px 0;
+}
+
+.item__background {
+    height: 300px;
+    border: 1px solid var(--accent, #CDAA7D);
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.services__item {
+    position: relative;
+}
+
+.services__img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.item__desc {
+    color: var(--white, #FFF);
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+
